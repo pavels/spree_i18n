@@ -241,123 +241,163 @@ cs:
     models: 
       spree/address: 
         one: Adresa
+        few: Adres
         other: Adres
       spree/country: 
         one: Země
+        few: Zemí
         other: Zemí
       spree/credit_card: 
         one: Kreditní karta
+        few: Kreditních karet
         other: Kreditních karet
       spree/customer_return: 
         one: Vratka
+        few: Vratek
         other: Vratek
       spree/inventory_unit: 
         one: Inventární jednotka
+        few: Vratek
         other: Inventárních jednotek
       spree/line_item: 
         one: "Položka"
+        few: "Položek"
         other: "Položek"
       spree/option_type: 
         one: Typ volby
+        few: Typů voleb
         other: Typů voleb
       spree/option_value: 
         one: Hodnota volby
+        few: Hodnot voleb
         other: Hodnot voleb
       spree/order: 
         one: Objednávka
+        few: Objednávek
         other: Objednávek
       spree/payment: 
         one: Platba
+        few: Plateb
         other: Plateb
       spree/payment_method: 
         one: Platební metoda
+        few: Platebních metod
         other: Platebních metod
       spree/product: 
         one: Výrobek
+        few: Výrobků
         other: Výrobků
       spree/promotion: 
         one: Akce
+        few: Akcí
         other: Akcí
       spree/promotion_category: 
         one: Promotion Category
+        few: Promotion Categories
         other: Promotion Categories
       spree/property: 
         one: Vlastnost
+        few: Vlastností
         other: Vlastností
       spree/prototype: 
         one: "Šablona"
+        few: "Šablon"
         other: "Šablon"
       spree/refund_reason: 
         one: Refund Reason
+        few: Refund Reasons
         other: Refund Reasons
       spree/reimbursement: 
         one: Reimbursement
+        few: Reimbursements
         other: Reimbursements
       spree/reimbursement_type: 
         one: Reimbursement Type
+        few: Reimbursement Types
         other: Reimbursement Types
       spree/return_authorization: 
         one: Návrat oprávnění
+        few: Návratů oprávnění
         other: Návratů oprávnění
       spree/return_authorization_reason: 
         one: Return Authorization Reason
+        few: Return Authorization Reasons
         other: Return Authorization Reasons
       spree/role: 
         one: Role
+        few: Rolí
         other: Rolí
       spree/shipment: 
         one: Dodání
+        few: Dodání
         other: Dodání
       spree/shipping_category: 
         one: Kategorie dodání
+        few: Kategorií dodání
         other: Kategorií dodání
       spree/shipping_method: 
         one: Způsob dopravy
+        few: Způsobů dopravy
         other: Způsobů dopravy
       spree/state: 
         one: Stát
+        few: Států
         other: Států
       spree/state_change: 
         one: Změna stavu
+        few: Změn stavu
         other: Změn stavu
       spree/stock_location: 
         one: Umístění zásob
+        few: Umístění zásob
         other: Umístění zásob
       spree/stock_movement: 
         one: Pohyb zásob
+        few: Pohybů zásob
         other: Pohybů zásob
       spree/stock_transfer: 
         one: Převod zásob
+        few: Převodů zásob
         other: Převodů zásob
       spree/store_credit: 
         one: Kredit
+        few: Kreditů
         other: Kreditů
       spree/store_credit_category: 
         one: Kategorie kreditu
+        few: Kategorií kreditu
         other: Kategorií kreditu
       spree/tax_category: 
         one: Kategorie daně
+        few: Kategorií daně
         other: Kategorií daně
       spree/tax_rate: 
         one: Sazba daně
+        few: Sazeb daně
         other: Sazeb daně
       spree/taxon: 
         one: Kategorie
+        few: Kategorií
         other: Kategorií
       spree/taxonomy: 
         one: Sekce
+        few: Sekcí
         other: Sekcí
       spree/tracker: 
         one: Sledovací kód
+        few: Sledovacích kódů
         other: Sledovacích kódů
       spree/user: 
         one: Uživatel
+        few: Uživatelů
         other: Uživatelů
       spree/variant: 
         one: Varianta
+        few: Variant
         other: Variant
       spree/zone: 
         one: Zóna
+        few: Zón
         other: Zón
   devise: 
     confirmations: 
