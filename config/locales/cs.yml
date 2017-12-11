@@ -1,7 +1,7 @@
-cs:
-  activerecord:
-    attributes:
-      spree/address:
+cs: 
+  activerecord: 
+    attributes: 
+      spree/address: 
         address1: Adresa
         address2: Adresa (pokr.)
         city: Město
@@ -11,19 +11,19 @@ cs:
         phone: Telefon
         state: Země
         zipcode: PSČ
-      spree/calculator/tiered_flat_rate:
+      spree/calculator/tiered_flat_rate: 
         preferred_base_amount: Doporučený základ
         preferred_tiers: Doporučené kategorie
-      spree/calculator/tiered_percent:
+      spree/calculator/tiered_percent: 
         preferred_base_percent: Doporučená procenta
         preferred_tiers: Doporučené kategorie
-      spree/country:
+      spree/country: 
         iso: ISO
         iso3: ISO3
         iso_name: Název ISO
         name: Název
         numcode: ISO kód
-      spree/credit_card:
+      spree/credit_card: 
         base: Základ
         cc_type: Typ
         month: Měsíc
@@ -31,15 +31,31 @@ cs:
         number: "Číslo"
         verification_value: Verifikační hodnota
         year: Rok
-      spree/inventory_unit:
+      spree/inventory_unit: 
         state: Země
-      spree/line_item:
+      spree/line_item: 
         price: Cena
         quantity: Množství
-      spree/option_type:
+      spree/option_type: 
         name: Název
         presentation: Balení
-      spree/order:
+      spree/order: 
+      spree/order/bill_address: 
+        address1: Ulice
+        city: Město
+        firstname: Jméno
+        lastname: Příjmení
+        phone: Telefon
+        state: Země
+        zipcode: PSČ
+      spree/order/ship_address: 
+        address1: Ulice
+        city: Město
+        firstname: Jméno
+        lastname: Příjmení
+        phone: Telefon
+        state: Země
+        zipcode: PSČ
         checkout_complete: Odhlášení dokončeno
         completed_at: Dokončeno
         considered_risky: Rizikovost
@@ -54,61 +70,52 @@ cs:
         special_instructions: Speciální instrukce
         state: Stav objednávky
         total: Celkem
-      spree/order/bill_address:
-        address1: Ulice
-        city: Město
-        firstname: Jméno
-        lastname: Příjmení
-        phone: Telefon
-        state: Země
-        zipcode: PSČ
-      spree/order/ship_address:
-        address1: Ulice
-        city: Město
-        firstname: Jméno
-        lastname: Příjmení
-        phone: Telefon
-        state: Země
-        zipcode: PSČ
-      spree/payment:
+      spree/payment: 
         amount: "Částka"
-      spree/payment_method:
+        number: Číslo
+      spree/payment_method: 
         name: Název
-      spree/product:
+      spree/product: 
         available_on: K dispozici od
         cost_currency: Cena měny
         cost_price: Velkoobchodní cena
         description: Popis
+        discontinue_on: Vyřazeno k
         master_price: Základní cena
         name: Jméno
         on_hand: Skladem
         shipping_category: Kategorie dodání
         tax_category: Kategorie daně
-      spree/promotion:
-        advertise: Reklama
+      spree/promotion: 
+        advertise: Promovat
         code: Kód
         description: Popis
         event_name: Název události
         expires_at: Vyprší
+        generate_code: Generovat kód
         name: Název
         path: Cesta
+        promotion_category: Kategorie akce
         starts_at: Začíná
         usage_limit: Omezení počtu použití
-      spree/promotion_category:
+      spree/promotion_category: 
+        code: Kód
         name: Název
-      spree/property:
+      spree/property: 
         name: Název
         presentation: Prezentace
-      spree/prototype:
+      spree/prototype: 
         name: Název
-      spree/return_authorization:
+      spree/return_authorization: 
         amount: Množství
-      spree/role:
+      spree/role: 
         name: Název
-      spree/state:
+      spree/shipment: 
+        number: Číslo
+      spree/state: 
         abbr: Zkratka
         name: Název
-      spree/state_change:
+      spree/state_change: 
         state_changes: Změny stavu
         state_from: ze stavu
         state_to: do stavu
@@ -116,31 +123,35 @@ cs:
         type: Typ
         updated: Změněno
         user: Uživatel
-      spree/store:
+      spree/store: 
         mail_from_address: Adresa odesílatele
         meta_description: Meta popis
         meta_keywords: Meta klíčová slova
         name: Název
         seo_title: SEO titulek
         url: URL
-      spree/tax_category:
+      spree/store_credit: 
+        amount_used: Využitá hodnota
+      spree/store_credit_category: 
+        name: Název
+      spree/tax_category: 
         description: Popis
         name: Název
-      spree/tax_rate:
+      spree/tax_rate: 
         amount: Sazba
         included_in_price: Zahrnuto v ceně
         show_rate_in_label: Zobrazit cenu na známce
-      spree/taxon:
+      spree/taxon: 
         name: Název
         permalink: Trvalý odkaz
         position: Pozice
-      spree/taxonomy:
+      spree/taxonomy: 
         name: Název
-      spree/user:
+      spree/user: 
         email: Email
         password: Heslo
         password_confirmation: Potvrzení hesla
-      spree/variant:
+      spree/variant: 
         cost_currency: Cena měny
         cost_price: Velkoobchodní cena
         depth: Hloubka
@@ -149,165 +160,210 @@ cs:
         sku: SKU
         weight: Hmotnost
         width: "Šířka"
-      spree/zone:
+      spree/zone: 
         description: Popis
         name: Název
-    errors:
-      models:
-        spree/calculator/tiered_flat_rate:
-          attributes:
-            base:
+    errors: 
+      models: 
+        spree/calculator/tiered_flat_rate: 
+          attributes: 
+            base: 
               keys_should_be_positive_number: Klíč musí být kladné číslo.
-            preferred_tiers:
+            preferred_tiers: 
               should_be_hash: Doporučené kategorie musí být hash.
-        spree/calculator/tiered_percent:
-          attributes:
-            base:
+        spree/calculator/tiered_percent: 
+          attributes: 
+            base: 
               keys_should_be_positive_number: Klíč musí být kladné číslo.
               values_should_be_percent: Hodnota musí být v procentech.
-            preferred_tiers:
+            preferred_tiers: 
               should_be_hash: Doporučené kategorie musí být hash.
-        spree/classification:
-          attributes:
-            taxon_id:
+        spree/classification: 
+          attributes: 
+            taxon_id: 
               already_linked: Taxon ID je již spojen.
-        spree/credit_card:
-          attributes:
-            base:
+        spree/credit_card: 
+          attributes: 
+            base: 
               card_expired: Karta je po expiraci.
               expiry_invalid: Expirace není platná.
-        spree/line_item:
-          attributes:
-            currency:
+        spree/line_item: 
+          attributes: 
+            currency: 
               must_match_order_currency: Měna musí odpovídat měně objednávky.
-        spree/refund:
-          attributes:
-            amount:
+        spree/product: 
+          attributes: 
+            base: 
+              cannot_destroy_if_attached_to_line_items: Nelze smazat produkt, který je již položkou nějaké objednávky.
+            discontinue_on: 
+              invalid_date_range: musí být později než od kdy je produkt dostupný
+        spree/promotion: 
+          attributes: 
+            expires_at: 
+              invalid_date_range: musí být později než datum začátku
+        spree/refund: 
+          attributes: 
+            amount: 
               greater_than_allowed: Hodnota refundace je příliš vysoká.
-        spree/reimbursement:
-          attributes:
-            base:
+        spree/reimbursement: 
+          attributes: 
+            base: 
               return_items_order_id_does_not_match: ID objednávky neodpovídá.
-        spree/return_item:
-          attributes:
-            inventory_unit:
+        spree/return_item: 
+          attributes: 
+            inventory_unit: 
               other_completed_return_item_exists: Existují jiné dokončené vratky.
-            reimbursement:
+            reimbursement: 
               cannot_be_associated_unless_accepted: Kompenzace nemůže být spojeno pokud není akceptována.
-        spree/store:
-          attributes:
-            base:
+        spree/shipping_method: 
+          attributes: 
+            base: 
+              required_shipping_category: "Musíte vybrat alespoň jednu kategorii dodání"
+        spree/store: 
+          attributes: 
+            base: 
               cannot_destroy_default_store: Nelze smazat výchozí obchod.
-    models:
-      spree/address:
-        few: Adresy
+        spree/store_credit: 
+          attributes: 
+            amount_authorized: 
+              exceeds_total_credits: Přesahuje celkový kredit.
+            amount_used: 
+              cannot_be_greater_than_amount: Nemůže být vyšší než hodnota.
+              greater_than_zero_restrict_delete: je větší než 0. Nelze smazat kredit.
+        spree/store_credit_category: 
+          attributes: 
+            base: 
+              cannot_destroy_if_used_in_store_credit: Nelze smazat kategorri kreditu pokud je použita u nějakého kreditu.
+        spree/variant: 
+          attributes: 
+            base: 
+              cannot_destroy_if_attached_to_line_items: Nelze smazat variantu, která je již položkou nějaké objednávky.
+    models: 
+      spree/address: 
         one: Adresa
         other: Adres
-      spree/country:
-        few: Země
+      spree/country: 
         one: Země
         other: Zemí
-      spree/credit_card:
-        few: Kreditní karty
+      spree/credit_card: 
         one: Kreditní karta
         other: Kreditních karet
-      spree/customer_return:
-      spree/inventory_unit:
-        few: Inventární jednotky
+      spree/customer_return: 
+        one: Vratka
+        other: Vratek
+      spree/inventory_unit: 
         one: Inventární jednotka
         other: Inventárních jednotek
-      spree/line_item:
-        few: "Řádkové položky"
-        one: "Řádková položka"
-        other: "Řádkových položek"
-      spree/option_type:
-      spree/option_value:
-      spree/order:
-        few: Objednávky
+      spree/line_item: 
+        one: "Položka"
+        other: "Položek"
+      spree/option_type: 
+        one: Typ volby
+        other: Typů voleb
+      spree/option_value: 
+        one: Hodnota volby
+        other: Hodnot voleb
+      spree/order: 
         one: Objednávka
         other: Objednávek
-      spree/payment:
-        few: Platby
+      spree/payment: 
         one: Platba
         other: Plateb
-      spree/payment_method:
-      spree/product:
-        few: Výrobky
+      spree/payment_method: 
+        one: Platební metoda
+        other: Platebních metod
+      spree/product: 
         one: Výrobek
         other: Výrobků
-      spree/promotion:
-      spree/promotion_category:
-      spree/property:
-        few: Vlastnosti
+      spree/promotion: 
+        one: Akce
+        other: Akcí
+      spree/promotion_category: 
+        one: Promotion Category
+        other: Promotion Categories
+      spree/property: 
         one: Vlastnost
         other: Vlastností
-      spree/prototype:
-        few: "Šablony"
+      spree/prototype: 
         one: "Šablona"
         other: "Šablon"
-      spree/refund_reason:
-      spree/reimbursement:
-      spree/reimbursement_type:
-      spree/return_authorization:
-        few: Návraty oprávnění
+      spree/refund_reason: 
+        one: Refund Reason
+        other: Refund Reasons
+      spree/reimbursement: 
+        one: Reimbursement
+        other: Reimbursements
+      spree/reimbursement_type: 
+        one: Reimbursement Type
+        other: Reimbursement Types
+      spree/return_authorization: 
         one: Návrat oprávnění
         other: Návratů oprávnění
-      spree/return_authorization_reason:
-      spree/role:
-        few: Role
+      spree/return_authorization_reason: 
+        one: Return Authorization Reason
+        other: Return Authorization Reasons
+      spree/role: 
         one: Role
         other: Rolí
-      spree/shipment:
-        few: Dodání
+      spree/shipment: 
         one: Dodání
         other: Dodání
-      spree/shipping_category:
-        few: Kategorie dodání
+      spree/shipping_category: 
         one: Kategorie dodání
         other: Kategorií dodání
-      spree/shipping_method:
-      spree/state:
-        few: Státy
+      spree/shipping_method: 
+        one: Způsob dopravy
+        other: Způsobů dopravy
+      spree/state: 
         one: Stát
         other: Států
-      spree/state_change:
-      spree/stock_location:
-      spree/stock_movement:
-      spree/stock_transfer:
-      spree/tax_category:
-        few: Kategorie daně
+      spree/state_change: 
+        one: Změna stavu
+        other: Změn stavu
+      spree/stock_location: 
+        one: Umístění zásob
+        other: Umístění zásob
+      spree/stock_movement: 
+        one: Pohyb zásob
+        other: Pohybů zásob
+      spree/stock_transfer: 
+        one: Převod zásob
+        other: Převodů zásob
+      spree/store_credit: 
+        one: Kredit
+        other: Kreditů
+      spree/store_credit_category: 
+        one: Kategorie kreditu
+        other: Kategorií kreditu
+      spree/tax_category: 
         one: Kategorie daně
         other: Kategorií daně
-      spree/tax_rate:
-        few: Sazby daně
+      spree/tax_rate: 
         one: Sazba daně
         other: Sazeb daně
-      spree/taxon:
-        few: Kategorie
+      spree/taxon: 
         one: Kategorie
         other: Kategorií
-      spree/taxonomy:
-        few: Sekce
+      spree/taxonomy: 
         one: Sekce
         other: Sekcí
-      spree/tracker:
-      spree/user:
-        few: Uživatelé
+      spree/tracker: 
+        one: Sledovací kód
+        other: Sledovacích kódů
+      spree/user: 
         one: Uživatel
         other: Uživatelů
-      spree/variant:
-        few: Varianty
+      spree/variant: 
         one: Varianta
         other: Variant
-      spree/zone:
-        few: Zóny
+      spree/zone: 
         one: Zóna
         other: Zón
-  devise:
-    confirmations:
+  devise: 
+    confirmations: 
       confirmed: Váš účet byl úspěšně potvrzen. Nyní jste přihlášen(a).
       send_instructions: Za několik minut obdržíte email s instrukcemi k potvrzení vašeho účtu.
-    failure:
+    failure: 
       inactive: Váš účet ještě nebyl aktivován.
       invalid: Neplatný email nebo heslo.
       invalid_token: Neplatný ověřovací symbol.
@@ -315,42 +371,45 @@ cs:
       timeout: Vaše relace vypršela, přihlaste se prosím znovu, pak můžete pokračovat.
       unauthenticated: Musíte se přihlásit, pak můžete pokračovat.
       unconfirmed: Musíte potvrdit svůj účet, pak můžete pokračovat.
-    mailer:
-      confirmation_instructions:
+    mailer: 
+      confirmation_instructions: 
         subject: Instrukce k potvrzení účtu
-      reset_password_instructions:
+      reset_password_instructions: 
         subject: Instrukce k nastavení nového hesla
-      unlock_instructions:
+      unlock_instructions: 
         subject: Instrukce k odemčení účtu
-    oauth_callbacks:
+    oauth_callbacks: 
       failure: 'Není možné autorizovat z %{kind}, protože: %{reason}.'
       success: "Úspěšná autorizace z účtu %{kind}."
-    unlocks:
+    unlocks: 
       send_instructions: Za několik minut obdržíte email s instrukcemi, jak odemknout svůj účet.
       unlocked: Váš účet byl úspěšně odemknut. Nyní jste přihlášen(a).
-    user_passwords:
-      user:
+    user_passwords: 
+      user: 
         cannot_be_blank: Heslo nemůže být prázdné.
         send_instructions: Za několik minut obdržíte email s instrukcemi k nastavení nového hesla.
         updated: Vaše heslo bylo úspěšně změněno. Nyní jste přihlášen(a).
-    user_registrations:
+    user_registrations: 
       destroyed: Na shledanou! Váš účet byl úspěšně zrušen. Doufáme, že se brzy opět uvidíme.
       inactive_signed_up: Registrace byla úspěšná. Nicméně se nemůžete přihlásit, protože Váš účet je %{reason}.
       signed_up: Vítejte! Registrace byla úspěšná.
       updated: Váš účet byl úspěšně aktualizován.
-    user_sessions:
+    user_sessions: 
       signed_in: Přihlášení bylo úspěšné.
       signed_out: Odhlášení bylo úspěšné.
-  errors:
-    messages:
+  errors: 
+    messages: 
       already_confirmed: již byl potvrzen
       not_found: nenalezen
       not_locked: nebyl uzamčen
-      not_saved:
-        few: "%{count} chyby zabraňují uložení %{resource}:"
+      not_saved: 
         one: '1 chyba zabraňuje uložení %{resource}:'
         other: "%{count} chyb zabraňuje uložení %{resource}:"
-  spree:
+  number: 
+    percentage: 
+      format: 
+        precision: 1
+  spree: 
     abbreviation: Zkratka
     accept: Přijmout
     acceptance_errors: Chyby přijetí
@@ -359,7 +418,7 @@ cs:
     account: "Účet"
     account_updated: "Účet aktualizován"
     action: Akce
-    actions:
+    actions: 
       cancel: Zrušit
       continue: Pokračovat
       create: Vytvořit
@@ -376,7 +435,7 @@ cs:
     add: Přidat
     add_action_of_type: Přidat typ akce
     add_country: Přidat zemi
-    add_coupon_code:
+    add_coupon_code: 
     add_new_header: Přidat nové záhlaví
     add_new_style: Přidat nový styl
     add_one: Přidat
@@ -386,42 +445,59 @@ cs:
     add_rule_of_type: Přidat typové pravidlo
     add_state: Přidat stát
     add_stock: Přidat zásoby do skladu
-    add_stock_management: Přidat správu skladu
+    add_store_credit: PŘidat kredit
     add_to_cart: Přidat do košíku
     add_variant: Přidat variantu
     additional_item: Dodatečné náklady na jednotku
+    address: Address
     address1: Adresa
     address2: Adresa (pokrač.)
+    addresses: Addresses
     adjustable: Přizpůsobitelné
     adjustment: Přizpůsobení
     adjustment_amount: "Částka"
+    adjustment_labels: 
+      tax_rates: 
+        excluding_tax: '%{name}%{amount}'
+        including_tax: '%{name}%{amount} (Included in Price)'
     adjustment_successfully_closed: Nastavení bylo úspěšně uzavřeno!
     adjustment_successfully_opened: Nastavení bylo úspěšně otevřeno!
     adjustment_total: Celkové přizpůsobení
     adjustments: Přizpůsobení
-    admin:
-      tab:
+    admin: 
+      order: 
+        events: 
+          approve: schválit
+          cancel: zrušit
+          resend: poslat znovu
+          resume: pokračovat
+      tab: 
         configuration: Konfigurace
+        customer_returns: Vratky
         option_types: Typy voleb
         orders: Objednávky
         overview: Přehled
         products: Produkty
-        promotions: Akce
         promotion_categories: Kategorie akcí
+        promotions: Akce
         properties: Vlastnosti
         prototypes: Prototypy
         reports: Výkazy
+        return_authorizations: Autorizace vratek
         taxonomies: Taxonomie
         taxons: Taxony
         users: Uživatelé
-      user:
+      user: 
         account: Účet
         addresses: Adresa
+        available_store_credit: Uživatel má %{amount} kreditu k dispozici.
         items: Položky
         items_purchased: Zakoupené položky
+        no_store_credit: Uživatel nemá kredit.
         order_history: Historie objednávek
         order_num: Číslo objednávky
         orders: Objednávky
+        store_credits: Kredit
         user_information: Informace o uživateli
     administration: Administrace
     advertise: Inzerovat
@@ -431,21 +507,10 @@ cs:
     all_adjustments_closed: Nastavení byla úspěšně uzavřena!
     all_adjustments_opened: Nastavení byla úspěšně otevřena!
     all_departments: Všechna oddělení
-    all_items_have_been_returned:
-    allow_ssl_in_development_and_test: Povolit užívání SSL ve vývojovém a testovacím režimu
-    allow_ssl_in_production: Povolit užívání SSL v produkčním režimu
-    allow_ssl_in_staging: Povolit užívání SSL ve staging režimu
-    already_signed_up_for_analytics: Už jste zaregistrován pro Spree Analytics
+    all_items_have_been_returned: 
     alt_text: Další text
     alternative_phone: Další telefonní číslo
     amount: Množství
-    analytics_desc_header_1: Spree Analytics
-    analytics_desc_header_2: Průběžná analýza integrovaná do Vaší Spree nástěnky
-    analytics_desc_list_1: Získejte aktuální informace o prodeji
-    analytics_desc_list_2: Vyžaduje pouze bezplatný Spree účet pro aktivaci
-    analytics_desc_list_3: Absolutně žádný kód k instalaci
-    analytics_desc_list_4: Je kompletně zdarma!
-    analytics_trackers: Google Analytics
     and: a
     approve: schválit
     approved_at: schváleno
@@ -457,6 +522,7 @@ cs:
     authorization_failure: Chyba autorizace
     authorized: autorizováno
     auto_capture: Automatické zachycení
+    available: Dostupný
     available_on: Dostupný
     average_order_value: Průměrná hodnota objednávky
     avs_response: Odpověď AVS
@@ -482,12 +548,15 @@ cs:
     calculator: Kalkulátor
     calculator_settings_warning: Pokud měníte typ kalkulátoru, musíte před změnou uložit nastavení
     cancel: zrušit
+    canceled: zrušeno
     canceled_at: zrušeno
     canceler: zrušil
     cannot_create_customer_returns: Nelze vytvořit vratku. Tato objednávka nemá žádné zásilky.
     cannot_create_payment_without_payment_methods: Vytvoření platby objednávky nejde bez uvedení platební metody.
     cannot_create_returns: Nemohu vytvořit položku pro vrácení zboží (RMA), protože zboží ještě nebylo odesláno.
+    cannot_empty_completed_order: Objednávka již byla zpracována proto nemůže být vyprázdněna
     cannot_perform_operation: Nelze provést požadovanou operaci
+    cannot_return_more_than_bought_quantity: Nelze vrátit více než zakoupené mnozžství.
     cannot_set_shipping_method_without_address: Nelze nastavit způsob dodání dokud nejsou poskytnuty zákaznické údaje.
     capture: Strhnout
     capture_events: Zachytit události
@@ -496,14 +565,16 @@ cs:
     card_type: Typ karty
     card_type_is: Typ karty je
     cart: Košík
-    cart_subtotal:
+    cart_subtotal: 
+      one: 'Subtotal (1 item)'
+      few: 'Subtotal (%{count} items)'
+      other: 'Subtotal (%{count} items)'
     categories: Kategorie
     category: Kategorie
     charged: Účtováno
-    check_for_spree_alerts: Zkontrolovat Spree upozornění
     checkout: K pokladně
     choose_a_customer: Vyberte zákazníka
-    choose_a_taxon_to_sort_products_for:
+    choose_a_taxon_to_sort_products_for: Vyberte kategorii pro řazení
     choose_currency: Vyberte měnu
     choose_dashboard_locale: Vyberte lokalizaci
     choose_location: Vyberte místo
@@ -527,23 +598,25 @@ cs:
     continue_shopping: Pokračovat v nákupu
     cost_currency: Cena měny
     cost_price: Nákupní cena
-    could_not_connect_to_jirafe: Nelze se připojit k Jirafe k synchronizaci dat. Akce bude automaticky opakována později.
-    could_not_create_customer_return:
+    could_not_create_customer_return: Nelze vytvořit vratku.
     could_not_create_stock_movement: Došlo k problému při ukládání tohoto pohybu skladových zásob. Zkuste to prosím znovu.
     count_on_hand: Počet zboží k dispozici
     countries: Země
     country: Země
     country_based: Založeno na zemi
     country_name: Název země
-    country_names:
+    country_names: 
       CA: Kanada
       FRA: Francie
       ITA: Itálie
       US: Spojené státy americká
+    country_rule: 
+      label: Choose must be shipped to this country
     coupon: Kupón
     coupon_code: Kód kupónu
     coupon_code_already_applied: Kuponu již byla aplikován pro tuto objednávku
     coupon_code_applied: Kód kupónu byl úspěšně uplatněn na Vaši objednávku.
+    coupon_code_apply: Použít
     coupon_code_better_exists: Předchozí použitý kód kupónu vede k lepší nabídce
     coupon_code_expired: Kód kupónu vypršel
     coupon_code_max_usage: Překročen limit použití kódu kupónu
@@ -555,21 +628,17 @@ cs:
     create_new_order: Vytvořit novou objednávku
     create_reimbursement: Vytvořit náhradu
     created_at: Vytvořeno v
+    created_by: Vytvořil
     credit: Kredit
     credit_card: Kreditní karta
     credit_cards: Kreditní karty
     credit_owed: Dlužná částka (kredit)
+    credited: Credited
     credits: Kredity
     currency: Měna
-    currency_decimal_mark: Desetinná značka měny
     currency_settings: Nastavení měn
-    currency_symbol_position: Formát měny
-    currency_thousands_separator: Oddělovač tisíců měny
     current: Současný
-    current_promotion_usage:
-      few: 'Aktuální využití: %{count}'
-      one: 'Aktuální využití: %{count}'
-      other: 'Aktuální využití: %{count}'
+    current_promotion_usage: 
     customer: Zákazník
     customer_details: "Údaje zákazníka"
     customer_details_updated: "Údaje zákazníka byly aktualizovány"
@@ -577,47 +646,41 @@ cs:
     customer_returns: Vratky zákazníka
     customer_search: Vyhledávání zákazníků
     cut: Vyjmout
-    cvv_response:
-    dash:
-      jirafe:
-        app_id: App ID
-        app_token: App Token
-        currently_unavailable: Jirafe není momentálně dostupná. Spree se připojí jakmile bude opět dostupná.
-        explanation: Pole níže již může být vyplněno, pokud jste se rozhodli zaregistrovat Jirafe z admin panelu.
-        header: Nastavení Jirafe Analytics
-        site_id: Site ID
-        token: Token
-      jirafe_settings_updated: Nastavení Jirafe bylo aktualizováno.
+    cvv_response: 
     date: Datum
     date_completed: Datum dokončení
-    date_picker:
+    date_picker: 
       first_day: 1
       format: "%d.%m.%Y"
       js_format: dd.mm.yy
     date_range: Datum (od-do)
     default: Výchozí
+    default_country_cannot_be_deleted: Default country cannot be deleted
     default_refund_amount: Výchozí částka refundace
     default_tax: Výchozí Daň
     default_tax_zone: Výchozí daňová zóna
-    delete: Vymazat
-    deleted_variants_present: Některé položky objednávky obsahují produkty, které již nejsou dostupné.
+    delete: Odstranit
+    delete_from_taxon: Odebrat z kategorie
+    deleted: Odstraněno
     delivery: Dodávka
     depth: Hloubka
     description: Popis
     destination: Cíl
     destroy: Vymazat
     details: Detail
+    discontinue_on: Vyřadit k
+    discontinued: Vyřazeno
+    discontinued_variants_present: Některé položky v této objednávce již nejsou k dispozici.
     discount_amount: Množství slev
     dismiss_banner: Ne, děkuji. Nemám zájem, neukazujte tuto zprávu znovu
     display: Zobrazit
-    display_currency: Zobrazit symbol měny
     doesnt_track_inventory: Nepoužívá sledování skladu
     edit: Upravit
     editing_resource: 'Editovat %{resource}'
     editing_rma_reason: Editovat důvod reklamace
     editing_user: Můj účet
-    eligibility_errors:
-      messages:
+    eligibility_errors: 
+      messages: 
         has_excluded_product: Váš košík obsahuje produkt, který znemožňuje použití kupónu.
         item_total_less_than: Kupón nemůže být použit na objednávky s hodnotou nižší než %{amount}.
         item_total_less_than_or_equal: Kupón nemůže být použit na objednávky s hodnotou nižší nebo stejnou jako %{amount}.
@@ -637,32 +700,31 @@ cs:
     enable_mail_delivery: Povolit doručování emailů
     end: Konec
     ending_in: Končí na
-    environment: Prostředí
     error: Chyba
-    errors:
-      messages:
+    error_user_destroy_with_orders: Uživatele s objednávkami nelze smazat.
+    errors: 
+      messages: 
+        blank: musí být vyplněbno
         could_not_create_taxon: Nelze vytvořit kategorii
-        no_payment_methods_available: "Žádné platební metody nelze konfigurovat v tomto prostředí"
         no_shipping_methods_available: Pro zvolené cílové místo není k dispozici žádný způsob dodání, změňte prosím adresu a zkuste to znovu.
-    errors_prohibited_this_record_from_being_saved:
-      few: "%{count} chyby zabraňují uložení"
+    errors_prohibited_this_record_from_being_saved: 
       one: 1 chyba zabraňuje uložení
       other: "%{count} chyb zabraňuje uložení"
     event: Událost
-    events:
-      spree:
-        cart:
+    events: 
+      spree: 
+        cart: 
           add: Vložit do košíku
-        checkout:
+        checkout: 
           coupon_code_added: Přidání kódu kupónu
-        content:
+        content: 
           visited: Navštívení stránky se statickým obsahem
-        order:
+        order: 
           contents_changed: Změna obsahu objednávky
         page_view: Zobrazení stránky se statickým obsahem
-        user:
+        user: 
           signup: Registrace uživatele
-    exceptions:
+    exceptions: 
       count_on_hand_setter: Nelze nastavit count_on_hand manuálně, protože je automaticky nastaven callback recalculate_count_on_hand. Prosím, použijte raději `update_column(:count_on_hand, value)`.
     exchange_for: Vyměnit za
     excl: vynech.
@@ -670,9 +732,11 @@ cs:
     expedited_exchanges_warning: "Jakákoliv vybraná výměna bude zákazníkovi odeslána ihned po uložení. Zákazníkovi bude účtována plná hodnota položky pokud nevrátí původní položku do %{days_window} dnů."
     expiration: Expirace
     extension: Rozměr
+    extensions_directory: Adresář rozšiření
     failed_payment_attempts: Chybných pokusů o platbu
     filename: Název souboru
     fill_in_customer_info: Vyplňte prosím zákaznické informace
+    filter: Filter
     filter_results: Zobrazit výsledky
     finalize: Dokončit
     finalized: Dokončeno
@@ -688,41 +752,47 @@ cs:
     free_shipping_amount: Hodnota pro dodání zdarma
     front_end: Veřejná část
     gateway: Platební brána
-    gateway_config_unavailable: Platební brána není k dispozici pro režim
     gateway_error: Chyba platební brány
     general: Obecné
     general_settings: Obecné nastavení
-    google_analytics: Google Analytics
-    google_analytics_id: Google Analytics ID
+    generate_code: Generate coupon code
     guest_checkout: Objednávka bez registrace
     guest_user_account: Nakoupit jako host (bez registrace)
     has_no_shipped_units: nemá žádné dodané položky
     height: Výška
-    hide_cents: Skrýt haléře
+    help_center: Centrum nápovědy
     home: Obchod
-    i18n:
+    i18n: 
       available_locales: Dostupné lokalizace
+      fields: Fields
       language: Jazyk
       localization_settings: Nastavení lokalizace
+      only_complete: Only complete
+      only_incomplete: Only incomplete
+      select_locale: Select locale
+      show_only: Show only
+      supported_locales: Supported Locales
       this_file_language: "Čeština (CS)"
+      translations: Translations
     icon: Ikona
-    identifier: Identifikátor
     image: Obrázek
     images: Obrázky
-    implement_eligible_for_return:
-    implement_requires_manual_intervention:
+    implement_eligible_for_return: 
+    implement_requires_manual_intervention: 
     inactive: Neaktivní
     incl: obsah.
     included_in_price: Zahrnuto v ceně
     included_price_validation: nemůže být vybráno pokud není nastavena výchozí daňová zóna
     incomplete: Neúplné
-    info_number_of_skus_not_shown: a další
+    info_number_of_skus_not_shown:
+      one: "a jeden další"
+      other: "a %{count} dalších"
     info_product_has_multiple_skus: Tento produkt má %{count} variant
     instructions_to_reset_password: Zadejte prosím svůj email do formuláře níže
     insufficient_stock: Nedostatečné skladové zásoby, zbývá pouze %{on_hand}
     insufficient_stock_lines_present: Některé položky nejsou na skladě v dostatečném množství.
     intercept_email_address: Odchytávání emailů
-    intercept_email_instructions: Anulovat email příjemce a nahradit s touto adresou
+    intercept_email_instructions: Anulovat email příjemce a nahradit touto adresou
     internal_name: Interní jméno
     invalid_credit_card: Neplatná platební karta
     invalid_exchange_variant: Neplatná varianta pro výměnu
@@ -735,11 +805,12 @@ cs:
     inventory_state: Stav skladu
     is_not_available_to_shipment_address: není k dispozici pro dodací adresu
     iso_name: ISO název
+    issued_on: Issued On
     item: Položka
     item_description: Popis položky
     item_total: Položky celkem
-    item_total_rule:
-      operators:
+    item_total_rule: 
+      operators: 
         gt: větší než
         gte: větší nebo stejný než
         lt: menší než
@@ -748,9 +819,7 @@ cs:
     items_in_rmas: Položky RMA
     items_reimbursed: Nahrazené položky
     items_to_be_reimbursed: Položky k náhradě
-    jirafe: Jirafe
-    landing_page_rule:
-      path: Cesta
+    join_slack: Join Slack
     last_name: Příjmení
     last_name_begins_with: Příjmení začíná na
     learn_more: Dozvědět se více
@@ -758,6 +827,7 @@ cs:
     line_item_adjustments: Úpravy položky
     list: Vypsat
     loading: Nahrávání
+    loading_tree: Loading tree. Please wait…
     locale_changed: Nastavení jazyka změněno
     location: Umístění
     lock: Uzamknout
@@ -774,11 +844,11 @@ cs:
     look_for_similar_items: Vyhledat podobné položky
     make_refund: Provést vrácení
     make_sure_the_above_reimbursement_amount_is_correct: Zkontrolujte, že výše uvedená hodnota náhrady je správně.
-    manage_promotion_categories: Spravovat kategorie nabídek
+    manage_promotion_categories: Spravovat kategorie akcí
     manage_variants: Spravovat varianty
     manual_intervention_required: Je vyžadován ruční zásah
     master_price: Základní cena
-    match_choices:
+    match_choices: 
       all: Vše
       none: Ani jeden
     max_items: Maximum položek
@@ -789,13 +859,15 @@ cs:
     meta_title: Titulek (meta)
     metadata: Metadata
     minimal_amount: Minimální částka
+    missing_return_authorization: ! 'Missing Return Authorization for %{item_name}.'
     month: Měsíc
     more: Víc
     move_stock_between_locations: Přesunout skladové zásoby mezi sklady
+    mutable: Mutable
     my_account: Můj účet
     my_orders: Mé objednávky
     name: Název
-    name_on_card:
+    name_on_card: 
     name_or_sku: Název nebo SKU (zadejte alespoň první 4 písmena z názvu výrobku)
     new: Nový
     new_adjustment: Nová úprava
@@ -815,8 +887,10 @@ cs:
     new_prototype: Nová šablona
     new_refund: Nová refundace
     new_refund_reason: Nový důvod refundace
+    new_reimbursement_type: New Reimbursement Type
     new_return_authorization: Nová položka pro vrácení zboží (RMA)
     new_rma_reason: Nový důvod RMA
+    new_role: New Role
     new_shipment_at_location: Nová zásilka v lokalitě
     new_shipping_category: Nová kategorie dodání
     new_shipping_method: Nový způsob dodání
@@ -824,6 +898,8 @@ cs:
     new_stock_location: Nový sklad
     new_stock_movement: Přidat nový pohyb skladových zásob
     new_stock_transfer: Nový převod skladových zásob
+    new_store_credit: New Store Credit
+    new_store_credit_category: New Store Credit Category
     new_tax_category: Nová daňová kategorie
     new_tax_rate: Nová sazba daně
     new_taxon: Nová kategorie
@@ -834,6 +910,7 @@ cs:
     new_zone: Nová zóna
     next: Další
     no_actions_added: Není potřeba žádné další akce
+    no_available_date_set: No available date set
     no_payment_found: Nebyly nalezeny žádné platby
     no_pending_payments: Žádné čekající platby
     no_products_found: Nebyly nalezeny žádné výrobky
@@ -852,7 +929,7 @@ cs:
     not_enough_stock: Pro dokončení tohoto přesunu není dostatek zásob na zdrojovém umístění.
     not_found: "%{resource} nenalezen"
     note: Poznámka
-    notice_messages:
+    notice_messages: 
       product_cloned: Výrobek byl naklonován
       product_deleted: Výrobek byl smazán
       product_not_cloned: Výrobek nelze opakovat
@@ -860,11 +937,12 @@ cs:
       variant_deleted: Variantu lze odstranit
       variant_not_deleted: Variantu nelze odstranit
     num_orders: Počet objednávek
+    number: Number
     on_hand: Dostupný
     open: Otevřít
     open_all_adjustments: Otevřít všechna přizpůsobení
     option_type: Typ volby
-    option_type_placeholder:
+    option_type_placeholder: 
     option_types: Typy voleb
     option_value: Hodnota volby
     option_values: Hodnoty voleb
@@ -880,27 +958,26 @@ cs:
     order_details: Detail objednávky
     order_email_resent: Potvrzení objednávky znovu zasláno
     order_information: Informace o objednávce
-    order_mailer:
-      cancel_email:
+    order_line_items: Order Line Items
+    order_mailer: 
+      cancel_email: 
         dear_customer: Vážený zákazníku,\n
         instructions: Vaše objednávka byla zrušena. Uschovejte si prosím tyto informace o zrušení k vaší evidenci.
         order_summary_canceled: Shrnutí objednávky [Zrušeno]
         subject: Zrušení objednávky
-        subtotal: ! 'Mezisoučet:'
-        total: ! 'Celkem:'
-      confirm_email:
+      confirm_email: 
         dear_customer: Vážený zákazníku,\n
         instructions: Zkontrolujte si a uschovejte si prosím následující údaje objednávky k vaší evidenci.
         order_summary: Přehled objednávek
         subject: Potvrzení objednávky
-        subtotal: ! 'Mezisoučet:'
         thanks: Děkujeme za Váš nákup.
-        total: ! 'Celkem:'
+      subtotal: ! 'Subtotal:'
+      total: ! 'Order Total:'
     order_not_found: Nemůžeme nalézt Vaši objednávku. Zkuste prosím akci provést později.
     order_number: Objednávka %{number}
     order_processed_successfully: Vaše objednávka byla úspěšně zpracována
     order_resumed: Objednávka obnovena
-    order_state:
+    order_state: 
       address: Adresa
       awaiting_return: "Čeká na návrat"
       canceled: Zrušeno
@@ -917,11 +994,10 @@ cs:
     order_total: Objednávka celkem
     order_updated: Objednávka byla aktualizována
     orders: Objednávky
-    other_items_in_other: Ostatní položky objednávky
     out_of_stock: Není skladem
     overview: Přehled
     package_from: 'umístění:'
-    pagination:
+    pagination: 
       next_page: další strana »
       previous_page: "« předchozí strana"
       truncate: "…"
@@ -940,7 +1016,7 @@ cs:
     payment_processor_choose_banner_text: Pokud potřebujete poradit při výběru platební služby, navštivte prosím
     payment_processor_choose_link: Platební metody
     payment_state: Stav platby
-    payment_states:
+    payment_states: 
       balance_due: Nedoplatek
       checkout: Pokladna
       completed: Dokončeno
@@ -953,12 +1029,14 @@ cs:
     payment_updated: Platba upravena
     payments: Platby
     pending: Čekající
+    pending_sale: Pending Sale
     percent: Procenta
     percent_per_item: Procent na položku
     permalink: Stálý odkaz
     phone: Telefon
     place_order: Objednat
     please_define_payment_methods: Nejprve zadefinujte platební metody.
+    please_enter_reasonable_quantity: Please enter a reasonable quantity.
     populate_get_error: Něco je špatně. Zkuste prosím přidat položku znovu.
     powered_by: Pohání
     pre_tax_amount: Hodnota bez daně
@@ -977,63 +1055,65 @@ cs:
     product_has_no_description: Výrobek nemá žádný popis
     product_not_available_in_this_currency: Tento výrobek není dostupný pro vybranou měnu.
     product_properties: Vlastnosti výrobku
-    product_rule:
+    product_rule: 
       choose_products: Vyberte výrobky
       label: Štítek
       match_all: Vše
       match_any: Alespoň jeden
       match_none: Žádný
-      product_source:
+      product_source: 
         group: Ze skupiny výrobků
         manual: Vybrat manuálně
     products: Výrobky
     promotion: Speciální nabídka
     promotion_action: Akce speciálních nabídek
-    promotion_action_types:
-      create_adjustment:
+    promotion_action_types: 
+      create_adjustment: 
         description: Vytvoří přizpůsobeni hodnoty na celou objednávku.
         name: Vytvořit přizpůsobení objednávky.
-      create_item_adjustments:
+      create_item_adjustments: 
         description: Vytvoří přizpůsobeni hodnoty na položku objednávky.
         name: Vytvořit přizpůsobení položky.
-      create_line_items:
+      create_line_items: 
         description: Naplní košík určeným množstvím variant
         name: Vytvořit položky
-      free_shipping:
+      free_shipping: 
         description: Nastaví přepravu celé objednávky na zdarma.
         name: Přeprava zdarma
     promotion_actions: Akce
-    promotion_form:
-      match_policies:
+    promotion_category: Promotion Category
+    promotion_form: 
+      match_policies: 
         all: V souladu se všemi pravidly
         any: V souladu s některými pravidly
+    promotion_label: 'Promotion (%{name})'
     promotion_rule: Pravidla speciálních nabídek
-    promotion_rule_types:
-      first_order:
+    promotion_rule_types: 
+      country: 
+        description: Order is shipped to proper (or default) country
+        name: Country
+      first_order: 
         description: Musí být zákazníkova první objednávka
         name: První objednávka
-      item_total:
+      item_total: 
         description: Celková částka objednávky splňuje tato kritéria
         name: Položky celkem
-      landing_page:
-        description: Zákazník musí navštívit určenou stránku
-        name: Cílové stránky
-      one_use_per_user:
+      one_use_per_user: 
         description: Pro každého uživatele pouze jednou.
         name: Jednou pro uživatele
-      option_value:
+      option_value: 
         description: Objednávka obsahuje produkty s konkrétní hodnotou volby.
         name: Hodnoty volby
-      product:
+      product: 
         description: Objednávka obsahuje zadaný výrobek(y)
         name: Výrobky
-      taxon:
+      taxon: 
         description: Objednávka výrobek ze zadaného taxonu
         name: Taxony
-      user:
+      user: 
         description: Dostupné pouze pro uvedené uživatele
         name: Uživatel
-      user_logged_in:
+      user_logged_in: 
         description: Dostupné pouze pro přihlášené uživatele
         name: Uživatel přihlášen
     promotion_uses: Použití speciálních nabídek
@@ -1046,6 +1126,7 @@ cs:
     prototypes: "Šablony"
     provider: Provider
     provider_settings_warning: Pokud měníte poskytovatele, je nutné uložit nové nastavení a teprve potom upravit nastavení uživatele
+    purchased_quantity: Purchased Quantity
     qty: Množství
     quantity: Množství
     quantity_returned: Vrácené množství
@@ -1058,6 +1139,7 @@ cs:
     received: Obdrženo
     reception_status: Stav obdržení
     reference: Reference
+    reference_contains: Reference Contains
     refund: Vráceno
     refund_amount_must_be_greater_than_zero: HOdnota refundace musí být větší než 0.
     refund_reasons: Důvody refundace
@@ -1068,8 +1150,8 @@ cs:
     reimburse: Nahradit
     reimbursed: Nahrazeno
     reimbursement: Náhrada
-    reimbursement_mailer:
-      reimbursement_email:
+    reimbursement_mailer: 
+      reimbursement_email: 
         days_to_send: ! 'Máte %{days} na vrácení jakéhokoliv zboží, které má být vyměněno.'
         dear_customer: Vážený zákazníku
         exchange_summary: Přehled výměn
@@ -1077,7 +1159,8 @@ cs:
         instructions: Vaše výměny byly zpracovány.
         refund_summary: Přehled refundací
         subject: Notifikace o výměně
-        total_refunded:  ! 'Celkem refundováno: %{total}'
+        thanks: Thank you for your business.
+        total_refunded: ! 'Celkem refundováno: %{total}'
     reimbursement_perform_failed: "Náhrada nemůže být provedena.  Chyba: %{error}"
     reimbursement_status: Stav náhrady
     reimbursement_type: Typ náhrady
@@ -1091,6 +1174,7 @@ cs:
     rename: Přejmenovat
     report: Report
     reports: Reporty
+    resellable: Resellable
     resend: Zaslat znovu
     reset_password: Resetovat mé heslo
     response_code: Kód odpovědi
@@ -1099,14 +1183,18 @@ cs:
     return: vrátit
     return_authorization: Položka pro vrácení zboží (RMA)
     return_authorization_reasons: Důvody pro vrácení zboží (RMA)
+    return_authorization_states: 
+      authorized: Authorized
+      canceled: Canceled
     return_authorization_updated: Položka pro vrácení zboží (RMA) aktualizována
     return_authorizations: Položky pro vrácení zboží (RMA)
     return_item_inventory_unit_ineligible: Vracené zboží musí být odesláno
     return_item_inventory_unit_reimbursed: Vracené zboží již bylo nahrazeno
+    return_item_order_not_completed: Return item's order must be completed
     return_item_rma_ineligible: Položka vyžaduje vrácení zboží (RMA)
     return_item_time_period_ineligible: Položka je mimo povolený interval pro vrácení zboží (RMA)
     return_items: Vracené položky
-    return_items_cannot_be_associated_with_multiple_orders:
+    return_items_cannot_be_associated_with_multiple_orders: 
     return_number: Číslo vrácení
     return_quantity: Množství položek pro vrácení zboží (RMA)
     returned: Vráceno
@@ -1118,6 +1206,7 @@ cs:
     rma_credit: RMA kredity
     rma_number: "Číslo vrácení zboží (RMA)"
     rma_value: Hodnota vrácení zboží (RMA)
+    role_id: Role ID
     roles: Role
     rules: Pravidla
     safe: Bezpečný
@@ -1126,6 +1215,7 @@ cs:
     sales_totals: Celkové prodeje
     save_and_continue: Uložit a pokračovat
     save_my_address: Uložit mojí adresu
+    saving: Saving
     say_no: Ne
     say_yes: Ano
     scope: Rozsah
@@ -1137,8 +1227,10 @@ cs:
     select: Výběr
     select_a_return_authorization_reason: Vyberte důvod pro vrácení zboží
     select_a_stock_location: Vyberte sklad
+    select_a_store_credit_reason: Select a reason for the store credit
     select_from_prototype: Výběr ze šablon
     select_stock: Vyberte zásoby ze skladu
+    selected_quantity_not_available: ! 'selected of %{item} is not available.'
     send_copy_of_all_mails_to: Zasílat kopie všech emailů na emailovou adresu
     send_mails_as: Posílat emaily jako
     server: Server
@@ -1150,17 +1242,18 @@ cs:
     shipment: Doprava
     shipment_adjustments: Úprava dopravy
     shipment_details: Informace k dopravě
-    shipment_mailer:
-      shipped_email:
+    shipment_mailer: 
+      shipped_email: 
         dear_customer: Vážený zákazníku,\n
         instructions: Vaše objednávka byla odeslána
         shipment_summary: Shrnutí doručení
+        shipping_method: "Shipping method: %{shipping_method}"
         subject: Notifikace o dodání
         thanks: Děkujeme Vám za nákup.
         track_information: 'Číslo pro sledování zásilky: %{tracking}'
         track_link: 'Odkaz pro sledování zásilky: %{url}'
     shipment_state: Stav dodávky
-    shipment_states:
+    shipment_states: 
       backorder: V externím skladu
       canceled: Zrušena
       partial: "Částečná"
@@ -1182,12 +1275,17 @@ cs:
     shipping_method: Způsob dodání
     shipping_methods: Způsoby dodání
     shipping_price_sack: Jednotná sazba za balík
+    shipping_rates: 
+      display_price: 
+        excluding_tax: "%{price} (+ %{tax_amount} %{tax_rate_name})"
+        including_tax: "%{price} (incl. %{tax_amount} %{tax_rate_name})"
     shipping_total: Celkem doprava
     shop_by_taxonomy: Nakupovat podle %{taxonomy}
     shopping_cart: Nákupní košík
     show: Ukázat
     show_active: Zobrazit platné
     show_deleted: Zobrazit smazané
+    show_discontinued: Show Discontinued
     show_only_complete_orders: Zobrazit pouze dokončené objednávky
     show_only_considered_risky: Zobrazit pouze rizikové
     show_rate_in_label: Zobrazit sazby v popisku
@@ -1198,12 +1296,12 @@ cs:
     special_instructions: Zvláštní instrukce
     split: Rozdělit
     spree_gateway_error_flash_for_checkout: Došlo k problému s Vašimi platebními informacemi. Zkontrolujte je prosím a opakujte akci znovu.
-    ssl:
+    ssl: 
       change_protocol: Zkuste změnit HTTPS na HTTP a opakovat pokus.
     start: Začátek
     state: Stav
     state_based: Založeno na státu
-    state_machine_states:
+    state_machine_states: 
       accepted: Přijato
       address: Adresa
       authorized: Schváleno
@@ -1248,21 +1346,55 @@ cs:
     stock_movements: Pohyby skladových zásob
     stock_movements_for_stock_location: Pohyb skladových zásob pro %{stock_location_name}
     stock_successfully_transferred: Skladové zásoby byly úspěšně přesunuty mezi lokacemi.
-    stock_transfer: Převod skladových zásob
+    stock_transfer:
+      errors: 
+        must_have_variant: You must add atleast one variant.
+    stock_transfer_name: Stock Transfer
     stock_transfers: Převody skladových zásob
     stop: Konec
     store: Obchod
+    store_credit: 
+      additional_payment_needed: Select another payment method for the remaining %{amount}.
+      allocated: "Added"
+      applicable_amount: "%{amount} in store credit will be applied to this order."
+      apply: Apply Store Credit
+      authorized: "Authorized"
+      available_amount: "You have %{amount} in Store Credit available!"
+      captured: "Used"
+      credit: "Credit"
+      errors: 
+        cannot_change_used_store_credit: You cannot change a store credit that has already been used
+        unable_to_create: Unable to create store credit
+        unable_to_delete: Unable to delete store credit
+        unable_to_fund: Unable to pay for order using store credits
+        unable_to_update: Unable to update store credit
+      remaining_amount: "You have %{amount} remaining in your account's Store Credit."
+      remove: Remove Store Credit
+    store_credit_categories: Store Credit Categories
+    store_credit_name: Store Credit
+    store_credit_payment_method: 
+      currency_mismatch: "Store credit currency does not match order currency"
+      insufficient_authorized_amount: "Unable to capture more than authorized amount"
+      insufficient_funds: "Store credit amount remaining is not sufficient"
+      select_one_store_credit: "Select store credit to go towards remaining balance"
+      successful_action: "Successful store credit %{action}"
+      unable_to_credit: "Unable to credit code: %{auth_code}"
+      unable_to_find: "Could not find store credit"
+      unable_to_find_for_action: "Could not find store credit for auth code: %{auth_code} for action: %{action}"
+      unable_to_void: "Unable to void code: %{auth_code}"
+      user_has_no_store_credits: "User does not have any available store credit"
     street_address: Ulice
     street_address_2: "Číslo ulice"
     subtotal: Mezisoučet
     subtract: Odečet
     success: Úspěch
     successfully_created: "%{resource} byl úspěšně vytvořen!"
-    successfully_refunded:
+    successfully_refunded: 
     successfully_removed: "%{resource} byl úspěšně odstraněn!"
-    successfully_signed_up_for_analytics: Registrace do Spree Analytics proběhla úspěšně.
     successfully_updated: "%{resource} byl úspěšně aktualizován!"
     summary: Přehled
+    tags: Tags
+    tags_placeholder: Add Tags
     tax: Daň
     tax_categories: Daňové kategorie
     tax_category: Daňová kategorie
@@ -1273,20 +1405,22 @@ cs:
     taxon: Kategorie
     taxon_edit: Upravit kategorii
     taxon_placeholder: Přidat kategorii
-    taxon_rule:
+    taxon_rule: 
       choose_taxons: Vyberte taxon
       label: Objednávka musí obsahovat x těchto taxonů
       match_all: všechny
       match_any: alespoň jeden z
     taxonomies: Sekce
     taxonomy: Sekce
+    taxonomy_brands_name: Brands
+    taxonomy_categories_name: Categories
     taxonomy_edit: Upravit sekci
     taxonomy_tree_error: Požadovaná změna nebyla přijata a strom byl vrácen do předchozího stavu, zkuste prosím změnu provést znovu.
     taxonomy_tree_instruction: "* Pro přidání, odstranění a uspořádání potomka klikněte na větev pravým tlačítkem."
     taxons: Kategorie
     test: Test
-    test_mailer:
-      test_email:
+    test_mailer: 
+      test_email: 
         greeting: Gratulujeme!
         message: Pokud jste obdrželi tento email, Vaše nastavení emailu je správné.
         subject: Testovací email
@@ -1329,15 +1463,19 @@ cs:
     usage_limit: Limit pro použití
     use_app_default: Použít výchozí
     use_billing_address: Použít fakturační adresu
+    use_existing_cc: Use an existing card on file
     use_new_cc: Použít novou kartu
+    use_new_cc_or_payment_method: Use a new card / payment method
     use_s3: Použít Amazon S3 pro ukládání obrázků
+    used: Used
     user: Uživatel
-    user_rule:
+    user_not_found: User not found
+    user_rule: 
       choose_users: Vyberte uživatele
     users: Uživatelé
-    validation:
+    validation: 
       cannot_be_less_than_shipped_units: Nesmí být menší než číslo poslaných jednotek.
-      cannot_destroy_line_item_as_inventory_units_have_shipped:
+      cannot_destroy_line_item_as_inventory_units_have_shipped: 
       exceeds_available_stock: přesahuje dostupné skladové zásoby. Ujistěte se, že pro položky objednávky je požadované množství.
       is_too_large: je příliš mnoho -- stávající skladové zásoby nepokryjí požadované množství!
       must_be_int: musí být celé číslo
