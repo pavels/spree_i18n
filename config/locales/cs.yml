@@ -1020,7 +1020,7 @@ cs:
       balance_due: Nedoplatek
       checkout: Pokladna
       completed: Dokončeno
-      credit_owed: Dluží kredit
+      credit_owed: Přeplatek
       failed: Selhalo
       paid: Zaplaceno
       pending: "Čekající na vyřízení"
