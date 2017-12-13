@@ -499,7 +499,7 @@ cs:
     adjustment_labels: 
       tax_rates: 
         excluding_tax: '%{name}%{amount}'
-        including_tax: '%{name}%{amount} (Included in Price)'
+        including_tax: '%{name}%{amount} (Zahrnuto v ceně)'
     adjustment_successfully_closed: Nastavení bylo úspěšně uzavřeno!
     adjustment_successfully_opened: Nastavení bylo úspěšně otevřeno!
     adjustment_total: Celkové přizpůsobení
@@ -1001,18 +1001,18 @@ cs:
     order_line_items: Order Line Items
     order_mailer: 
       cancel_email: 
-        dear_customer: Vážený zákazníku,\n
+        dear_customer: Vážený zákazníku,
         instructions: Vaše objednávka byla zrušena. Uschovejte si prosím tyto informace o zrušení k vaší evidenci.
         order_summary_canceled: Shrnutí objednávky [Zrušeno]
         subject: Zrušení objednávky
       confirm_email: 
-        dear_customer: Vážený zákazníku,\n
+        dear_customer: Vážený zákazníku,
         instructions: Zkontrolujte si a uschovejte si prosím následující údaje objednávky k vaší evidenci.
-        order_summary: Přehled objednávek
+        order_summary: Přehled objednávky
         subject: Potvrzení objednávky
         thanks: Děkujeme za Váš nákup.
-      subtotal: ! 'Subtotal:'
-      total: ! 'Order Total:'
+      subtotal: 'Mezisoučet:'
+      total: 'Celkem:'
     order_not_found: Nemůžeme nalézt Vaši objednávku. Zkuste prosím akci provést později.
     order_number: Objednávka %{number}
     order_processed_successfully: Vaše objednávka byla úspěšně zpracována
@@ -1284,7 +1284,7 @@ cs:
     shipment_details: Informace k dopravě
     shipment_mailer: 
       shipped_email: 
-        dear_customer: Vážený zákazníku,\n
+        dear_customer: Vážený zákazníku,
         instructions: Vaše objednávka byla odeslána
         shipment_summary: Shrnutí doručení
         shipping_method: "Shipping method: %{shipping_method}"
