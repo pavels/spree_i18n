@@ -458,6 +458,7 @@ cs:
       not_locked: nebyl uzamčen
       not_saved: 
         one: '1 chyba zabraňuje uložení %{resource}:'
+        few: 'Několik chyb zabraňuje uložení %{resource}:'
         other: "%{count} chyb zabraňuje uložení %{resource}:"
   number: 
     percentage: 
